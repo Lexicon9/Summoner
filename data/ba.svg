@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="150"
+   height="100"
+   viewBox="0 0 39.6875 26.458334"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="ba2.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="8.19"
+     inkscape:cx="75"
+     inkscape:cy="54.884005"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="1072"
+     inkscape:window-y="442"
+     inkscape:window-maximized="1"
+     units="px"
+     showguides="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4919"
+       enabled="false"
+       spacingx="1.3229167"
+       spacingy="1.3229167"
+       snapvisiblegridlinesonly="true" />
+    <inkscape:grid
+       type="axonomgrid"
+       id="grid4921"
+       units="mm"
+       empspacing="5"
+       enabled="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-270.54165)">
+    <path
+       style="fill:#000000;stroke-width:0.26458335"
+       d="m 9.6107171,289.64482 c -1.022764,-0.80877 -1.38947,-1.92425 -1.210775,-3.68305 0.236076,-2.32357 0.651354,-3.49652 1.237929,-3.49652 0.7658949,0 0.8361849,0.35263 0.4023169,2.01836 -0.6110369,2.34593 -0.5342819,3.43714 0.279262,3.9702 0.583145,0.38209 0.864935,0.40145 2.006878,0.13785 2.998515,-0.69214 9.922957,-4.88476 16.292896,-9.86504 1.710975,-1.33772 2.722263,-1.64555 2.711688,-0.82543 -0.0036,0.27998 -1.25875,1.39799 -3.175,2.82811 l -3.169029,2.36509 v 3.12501 3.12502 h -0.661458 -0.661459 v -2.67811 -2.6781 l -0.595312,0.41899 c -1.893323,1.33256 -6.917771,4.229 -8.318976,4.79564 -0.901035,0.36438 -2.270254,0.73597 -3.042708,0.82576 -1.175442,0.13664 -1.51727,0.0741 -2.0962529,-0.38378 z"
+       id="path4934"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
