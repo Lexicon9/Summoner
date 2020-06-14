@@ -83,17 +83,17 @@ void draw() {
   poly(3, 410, 600, PI, 0, 0);
   star(6, 410, 600, 0, 0, 0);
 
-  arcSet(230, 3, 510, 0, 0);
+  arcGroup(230, 3, 510, 0, 0);
 
-  circleSet(10, 3, 410, 600, 0);
+  circleGroup(10, 3, 410, 600, 0);
   fill(0);
-  circleSet(10, 3, 410, 600, PI);
+  circleGroup(10, 3, 410, 600, PI);
 
-  circleSet(85, 3, 195, 600, 0); //205
+  circleGroup(85, 3, 195, 600, 0); //205
 
   fill(255, 100, 100);
 
-  //polySet(3, 50, 600, 0, 3, 267.5, 600, 0);
+  //polyGroup(3, 50, 600, 0, 3, 267.5, 600, 0);
 
   //strokeWeight(0.75);
   //shape(a, 250*sin((1*TWO_PI/5)+frameCount*PI/-700+0)+(width)/2-75, 250*-cos((1*TWO_PI/5)+frameCount*PI/-700+0)+(height)/2-50);
@@ -107,13 +107,13 @@ void draw() {
 
   //strokeWeight(3);
   //star(5, 500, -700, 0, 0, 0);
-  //circleSet(75, 5, 250, -700, 0);
+  //circleGroup(75, 5, 250, -700, 0);
   //star(7, 80, -200, 0, 0, 0);
-  //polySet(3, 20, 150, -3*PI/5, 1, 100, 150, -3*PI/5);
-  //polySet(3, 20, 150, -PI/5, 1, 100, 150, -PI/5);
-  //polySet(3, 20, 150, PI, 1, 100, 150, PI);
-  //polySet(3, 20, 150, PI/5, 1, 100, 150, PI/5);
-  //polySet(3, 20, 150, 3*PI/5, 1, 100, 150, 3*PI/5);
+  //polyGroup(3, 20, 150, -3*PI/5, 1, 100, 150, -3*PI/5);
+  //polyGroup(3, 20, 150, -PI/5, 1, 100, 150, -PI/5);
+  //polyGroup(3, 20, 150, PI, 1, 100, 150, PI);
+  //polyGroup(3, 20, 150, PI/5, 1, 100, 150, PI/5);
+  //polyGroup(3, 20, 150, 3*PI/5, 1, 100, 150, 3*PI/5);
 }
 
 void poly(int pPoints, float pRadius, float pSpeed, float pOffset, float x, float y) {
@@ -136,29 +136,27 @@ void star(int pPoints, float pRadius, float pSpeed, float pOffset, float x, floa
   }
 }
 
-void polySet(int pPoints, float pRadius, float pSpeed, float  pOffset, int cPoints, float cRadius, float cSpeed, float cOffset) {
+void polyGroup(int pPoints, float pRadius, float pSpeed, float  pOffset, int cPoints, float cRadius, float cSpeed, float cOffset) {
   for (int cNum = 0; cNum < cPoints; cNum++) {
     poly(pPoints, pRadius, pSpeed, pOffset, cRadius*sin((cNum*TWO_PI/cPoints)+frameCount*PI/cSpeed+cOffset), -cRadius*cos((cNum*TWO_PI/cPoints)+frameCount*PI/cSpeed+cOffset));
   }
 }
 
-void starSet(int pPoints, float pRadius, float pSpeed, float  pOffset, int cPoints, float cRadius, float cSpeed, float cOffset) {
+void starGroup(int pPoints, float pRadius, float pSpeed, float  pOffset, int cPoints, float cRadius, float cSpeed, float cOffset) {
   for (int cNum = 0; cNum < cPoints; cNum++) {
     star(pPoints, pRadius, pSpeed, pOffset, cRadius*sin((cNum*TWO_PI/cPoints)+frameCount*PI/cSpeed+cOffset), -cRadius*cos((cNum*TWO_PI/cPoints)+frameCount*PI/cSpeed+cOffset));
   }
 }
 
-void circleSet(float pRadius, int cPoints, float cRadius, float cSpeed, float cOffset) {
+void circleGroup(float pRadius, int cPoints, float cRadius, float cSpeed, float cOffset) {
   for (int cNum = 0; cNum < cPoints; cNum++) {
     ellipse(cRadius*sin((cNum*TWO_PI/cPoints)+((cSpeed == 0) ? 0 : frameCount*PI/cSpeed)+cOffset)+width/2, -cRadius*cos((cNum*TWO_PI/cPoints)+((cSpeed == 0) ? 0 : frameCount*PI/cSpeed)+cOffset)+height/2, pRadius*2, pRadius*2);
   }
 }
 
-void arcSet(float pRadius, int cPoints, float cRadius, float cSpeed, float cOffset) {
+void arcGroup(float pRadius, int cPoints, float cRadius, float cSpeed, float cOffset) {
   for (int cNum = 0; cNum < cPoints; cNum++) {
     //point(cRadius*sin((cNum*TWO_PI/cPoints)+((cSpeed == 0) ? 0 : frameCount*PI/cSpeed)+cOffset)+width/2, -cRadius*cos((cNum*TWO_PI/cPoints)+((cSpeed == 0) ? 0 : frameCount*PI/cSpeed)+cOffset)+height/2);
     arc(cRadius*sin((cNum*TWO_PI/cPoints)+((cSpeed == 0) ? 0 : frameCount*PI/cSpeed)+cOffset)+width/2, -cRadius*cos((cNum*TWO_PI/cPoints)+((cSpeed == 0) ? 0 : frameCount*PI/cSpeed)+cOffset)+height/2, pRadius*2, pRadius*2, (cNum*TWO_PI/cPoints)+PI/4.7, (cNum*TWO_PI/cPoints)+PI*QUARTER_PI);
   }
 }
-
-//
